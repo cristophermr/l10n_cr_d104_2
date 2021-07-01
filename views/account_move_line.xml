@@ -1,0 +1,20 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record id="account_view_move_line_tree_prod_serv" model="ir.ui.view">
+        <field name="name">account.move.line prod_serv</field>
+        <field name="model">account.move.line</field>
+        <field name="inherit_id" ref="account.view_move_line_tree"/>
+        <field name="priority">98</field>
+        <field name="arch" type="xml">
+            <xpath expr="//tree/field[@name='name']" position="after">
+                <field name="x_country_code" optional="show"/>
+                <field name="x_prod_serv" optional="show"/>
+                
+            </xpath>
+        </field>
+     </record> 
+
+  </data>
+</odoo>

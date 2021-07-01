@@ -1,0 +1,18 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record id="account_view_move_form_prod_serv" model="ir.ui.view">
+        <field name="name">account.move.form prod_serv</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="priority">98</field>
+        <field name="arch" type="xml">
+            <xpath expr="//tree/field[@name='price_total']" position="after">
+                <field name="x_prod_serv" optional="show"/>
+            </xpath>
+        </field>
+     </record> 
+
+  </data>
+</odoo>
