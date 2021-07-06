@@ -31,6 +31,8 @@
         'views/templates.xml',
         'views/account_move.xml',
         'views/account_move_line.xml',
+        'data/account.financial.html.report.csv',
+        'data/account.financial.html.report.line.csv',
     ],
     # only loaded in demonstration mode
     'demo': [
