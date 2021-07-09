@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "prod_serv",
+    'name': "CR Reporte Hacienda D104",
 
     'summary': """
         To identify the type of product of
