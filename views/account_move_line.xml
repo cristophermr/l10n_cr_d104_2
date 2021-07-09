@@ -10,8 +10,6 @@
         <field name="arch" type="xml">
             <xpath expr="//tree/field[@name='name']" position="after">
                 <field name="x_country_code" optional="show"/>
-                <field name="x_prod_serv" optional="show"/>
-                
             </xpath>
         </field>
      </record> 

@@ -10,19 +10,18 @@ class AccountMoveProdServ(models.Model):
 
     x_country_code = fields.Char(related="partner_id.country_id.code", store=True)
 
-    x_prod_serv = fields.Selection([
-        ('b', 'Bien'),
-        ('s', 'Servicio'),
-    ], string="Bien/Servicio")
-
     @api.onchange('product_id')
     def prod_serv_update(self):
-
+        result = False
         if self.product_id.type == "service":
-            self.x_prod_serv = 's'
+            result = self.env['account.analytic.tag'].search([('name','=ilike','Servicios')],limit=1)
         elif self.product_id.type == "product":
-            self.x_prod_serv = 'b'
+            result = self.env['account.analytic.tag'].search([('name','=ilike','Bienes')],limit=1)
         elif self.product_id.type == "consu":
-            self.x_prod_serv = 'b'
-
+            result = self.env['account.analytic.tag'].search([('name','=ilike','Bienes')],limit=1)
+        
+        if result == False:
+            return
+        self.analytic_tag_ids = [(6, 0, [result.id] )]
+        
         return
