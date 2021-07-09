@@ -3,12 +3,12 @@
     'name': "prod_serv",
 
     'summary': """
-        Module that adds the column Bien/Servicio
-        To identify the type of product of invoices or Vendor Bills""",
+        To identify the type of product of
+        invoices or Vendor Bills as Bien/Servicio using the Analytic Tags""",
 
     'description': """
-        Module that adds the column Bien/Servicio
-        To identify the type of product of invoices or Vendor Bills,
+        To identify the type of product of
+        invoices or Vendor Bills as Bien/Servicio using the Analytic Tags,
         and then apply this to a Custom Financial Report
     """,
 
