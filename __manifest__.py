@@ -22,13 +22,13 @@
     'version': '0.2',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','account_accountant','sale_management'],
+    'depends': ['base','account_accountant','sale_management','analytic_enterprise', 'analytic'],
 
     # always loaded
     'data': [
         'views/account_move_line.xml',
         'data/account.report.csv',
-        'data/account.account.tag.csv',
+        #'data/account.analytic.plan.csv',
         #'data/account.report.line.csv',
     ],
 }

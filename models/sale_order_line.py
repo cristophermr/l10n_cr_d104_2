@@ -16,11 +16,11 @@ class SaleOrderProdServ(models.Model):
         result = False
         
         if self.product_template_id.type == "service":
-            result = self.env['account.analytic.tag'].search([('name','=ilike','Servicios')],limit=1)
+            result = self.env['account.account.tag'].search([('name','=ilike','Servicios')],limit=1)
         elif self.product_template_id.type == "product":
-            result = self.env['account.analytic.tag'].search([('name','=ilike','Bienes')],limit=1)
+            result = self.env['account.account.tag'].search([('name','=ilike','Bienes')],limit=1)
         elif self.product_template_id.type == "consu":
-            result = self.env['account.analytic.tag'].search([('name','=ilike','Bienes')],limit=1)
+            result = self.env['account.account.tag'].search([('name','=ilike','Bienes')],limit=1)
         
         if result == False:
             return

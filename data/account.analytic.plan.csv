@@ -1,0 +1,4 @@
+id,name,default_applicability
+account_analytic_tag_bienes,Bienes,optional
+account_analytic_tag_servicios,Servicios,optional
+account_analytic_tag_importaciones,Importaciones,optional
