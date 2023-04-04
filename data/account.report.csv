@@ -1,0 +1,2 @@
+id,name,filter_date_range,filter_period_comparison,filter_growth_comparison,filter_unfold_all,filter_account_type,filter_journals,filter_partner,filter_unreconciled,filter_cash_basis
+rep_cr_d_104_2,Reporte CR D-104-2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
