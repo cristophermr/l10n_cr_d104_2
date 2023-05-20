@@ -26,8 +26,8 @@
 
     # always loaded
     'data': [
-        'views/account_move_line.xml',
-        'data/account.report.csv',
+        # 'views/account_move_line.xml',
+        # 'data/account.report.csv',
         #'data/account.analytic.plan.csv',
         #'data/account.report.line.csv',
     ],
